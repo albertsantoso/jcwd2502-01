@@ -330,6 +330,7 @@ module.exports = {
 				],
 				where: { role: "user" },
 				order: orderOptions,
+				limit: 12,
 			};
 
 			if (search) {
@@ -373,6 +374,7 @@ module.exports = {
 				],
 				where: { role: { [Op.in]: ["admin", "super"] } },
 				order: orderOptions,
+				limit: 12,
 			};
 
 			if (search) {
